@@ -13,3 +13,4 @@ elif (remainder == 0):
 elif (remainder != 0 and remainder > 6):
     print(f"Last digit of {number} is {remainder} and is greater than 5")
 
+
