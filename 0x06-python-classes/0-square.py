@@ -5,5 +5,4 @@
 class Square:
 
     """This is a python class that is empty."""
-
     pass
