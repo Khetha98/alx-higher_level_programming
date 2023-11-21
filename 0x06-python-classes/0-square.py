@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
-"""Define the class Square."""
+# 0-square.y by Khethukuthula Simamane
+"""Define a class Square."""
 
 
 class Square:
-    """Represent the square."""
+    """Represent a square."""
     pass
