@@ -1,0 +1,27 @@
+==============================
+Use of 5-text_indentation.py
+==============================
+
+Usage
+=====
+
+::
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation("Hello?")
+    Hello?
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("   Hi there.")
+    Hi there.
+    <BLANKLINE>
+
+::
+    >>> text_indentation("          ")
+    
+::
+    >>> text_indentation("Hello.   ")
+    Hello.
+    <BLANKLINE>
