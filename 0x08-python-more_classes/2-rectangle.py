@@ -6,8 +6,8 @@ This class defines a rectangle
 
 class Rectangle:
      """
-    It a class that represents a rectangle
-    """
+     It a class that represents a rectangle
+     """
 
      def __init__(self,  width=0, height=0):
           """Initializing a rectangle class
