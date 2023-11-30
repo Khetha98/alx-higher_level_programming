@@ -1,23 +1,20 @@
 #!/usr/bin/python3
-"""
+'''
 This class defines a rectangle
-"""
+'''
 
 
 class Rectangle:
-    """
+    '''
     It a class that represents a rectangle
-    """
+    '''
 
     number_of_instances = 0
-    
+
 
     def __init__(self,  width=0, height=0):
-        """Initialize a new Rectangle.
-        Args:
-            width : The width of the new rectangle.
-            height : The height of the new rectangle.
-        """
+        '''Initialize a new Rectangle.
+        '''
 
         Rectangle.number_of_instances += 1
         self.__width = width
