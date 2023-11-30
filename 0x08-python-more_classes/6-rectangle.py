@@ -8,13 +8,15 @@ class Rectangle:
     """
     It a class that represents a rectangle
     """
+
     number_of_instances = 0
+    
 
     def __init__(self,  width=0, height=0):
         """Initialize a new Rectangle.
         Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
+            width : The width of the new rectangle.
+            height : The height of the new rectangle.
         """
 
         Rectangle.number_of_instances += 1
