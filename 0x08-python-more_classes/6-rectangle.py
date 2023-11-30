@@ -8,7 +8,6 @@ class Rectangle:
     '''
     It a class that represents a rectangle
     '''
-
     number_of_instances = 0
 
 
@@ -19,7 +18,6 @@ class Rectangle:
         Rectangle.number_of_instances += 1
         self.__width = width
         self.__height = height
-
 
     @property
     def width(self):

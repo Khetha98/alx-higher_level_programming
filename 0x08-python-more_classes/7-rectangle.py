@@ -8,7 +8,6 @@ class Rectangle:
     '''
     It a class that represents a rectangle
     '''
-
     print_symbol = "#"
     number_of_instances = 0
 
