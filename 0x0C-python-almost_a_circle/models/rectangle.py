@@ -15,7 +15,6 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    # Getters for each attribute
     @property
     def width(self):
         """Getter for the width"""
@@ -36,7 +35,6 @@ class Rectangle(Base):
         """Gette for the y"""
         return self.__y
 
-    # Setters for each attribute
     @width.setter
     def width(self, value):
         if type(value) != int:
