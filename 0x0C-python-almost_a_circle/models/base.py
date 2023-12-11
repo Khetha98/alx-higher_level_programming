@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+"""This is the base module for other classes"""
+
 
 import json
 import os
 
+
 class Base:
+    """It a base class"""
+    
     __nb_objects = 0
 
     def __init__(self, id=None):

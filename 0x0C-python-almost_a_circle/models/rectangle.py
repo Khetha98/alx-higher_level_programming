@@ -1,12 +1,14 @@
 #!/usr/bin/python3
+"""Module that has rectangle class"""
 
 from models.base import Base
 
 
 class Rectangle(Base):
+    """It a rectangle class"""
 
     def __init__(self, width, height, x=0, y=0, id=None): 
-
+        """It a constructor"""
         self.width = width
         self.height = height
         self.x = x
