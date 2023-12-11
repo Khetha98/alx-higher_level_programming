@@ -35,7 +35,6 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-
     def update(self, *args, **kwargs):
         """updates the square
         """
@@ -53,7 +52,7 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if hasattr(self, key) is True:
                     setattr(self, key, value)
-        
+
     def to_dictionary(self):
         """it retruns out a dictonary
         """
