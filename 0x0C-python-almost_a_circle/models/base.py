@@ -8,7 +8,7 @@ import os
 
 class Base:
     """It a base class"""
-    
+
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -26,7 +26,6 @@ class Base:
         if list_dictionaries is None:
             return '[]'
         return json.dumps(list_dictionaries)
-
 
 
     @staticmethod
