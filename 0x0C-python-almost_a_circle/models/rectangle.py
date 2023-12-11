@@ -85,7 +85,8 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """The format for the string representation for the class"""
+        """The format for the string
+         representation for the class"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
 {self.__width}/{self.__height}"
 
@@ -109,8 +110,8 @@ class Rectangle(Base):
             It returns a dictionary representation of this class
         """
 
-        return {'x': getattr(self, "x"),
-                'y': getattr(self, "y"),
-                'id': getattr(self, "id"),
+        return {'id': getattr(self, "id"),
+                'width': getattr(self, "width"),
                 'height': getattr(self, "height"),
-                'width': getattr(self, "width")}
+                'x': getattr(self, "x"),
+                'y': getattr(self, "y")}
