@@ -45,6 +45,7 @@ class TestSquare_instantiation(unittest.TestCase):
         s2 = Square(2, 10)
         self.assertEqual(s1.id, s2.id - 1)
 
+
 class TestSquare_size(unittest.TestCase):
     """Unittests for testing size initialization of the Square class."""
 
@@ -84,6 +85,7 @@ class TestSquare_x(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Square(1, 5.5)
 
+
 class TestSquare_y(unittest.TestCase):
     """Unittests for testing initialization of Square y attribute."""
 
@@ -98,6 +100,7 @@ class TestSquare_y(unittest.TestCase):
     def test_float_y(self):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             Square(1, 3, 5.5)
+
 
 
 class TestSquare_order_of_initialization(unittest.TestCase):
@@ -121,6 +124,7 @@ class TestSquare_area(unittest.TestCase):
     def test_area_large(self):
         s = Square(999999999999999999, 0, 0, 1)
         self.assertEqual(999999999999999998000000000000000001, s.area())
+
 
 class TestSquare_stdout(unittest.TestCase):
     """Unittests for testing __str__ and display methods of Square class."""
@@ -155,6 +159,7 @@ class TestSquare_stdout(unittest.TestCase):
         correct = "[Square] ({}) 5/0 - 5".format(s.id)
         self.assertEqual(correct, s.__str__())
 
+
 class TestSquare_update_args(unittest.TestCase):
     """Unittests for testing update args method of the Square class."""
 
@@ -168,6 +173,7 @@ class TestSquare_update_args(unittest.TestCase):
         s.update(89)
         self.assertEqual("[Square] (89) 10/10 - 10", str(s))
 
+
 class TestSquare_update_kwargs(unittest.TestCase):
     """Unittests for testing update kwargs method of Square class."""
 
@@ -180,6 +186,7 @@ class TestSquare_update_kwargs(unittest.TestCase):
         s = Square(10, 10, 10, 10)
         s.update(size=1, id=2)
         self.assertEqual("[Square] (2) 10/10 - 1", str(s))
+
 
 class TestSquare_to_dictionary(unittest.TestCase):
     """Unittests for testing to_dictionary method of the Square class."""
