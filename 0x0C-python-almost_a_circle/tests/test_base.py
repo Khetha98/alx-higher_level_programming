@@ -141,5 +141,6 @@ class TestBase_load_from_file(unittest.TestCase):
         list_rectangles_output = Rectangle.load_from_file()
         self.assertEqual(str(r1), str(list_rectangles_output[0]))
 
+
 if __name__ == "__main__":
     unittest.main()

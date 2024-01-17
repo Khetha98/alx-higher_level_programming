@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # test_square.py
-# Brennan D Baraban <375@holbertonschool.com>
 """Defines unittests for models/square.py.
 
 Unittest classes:
@@ -195,6 +194,7 @@ class TestSquare_to_dictionary(unittest.TestCase):
         s = Square(10, 2, 1, 1)
         correct = {'id': 1, 'x': 2, 'size': 10, 'y': 1}
         self.assertDictEqual(correct, s.to_dictionary())
+
 
 if __name__ == "__main__":
     unittest.main()
