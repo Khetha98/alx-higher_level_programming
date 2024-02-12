@@ -1,10 +1,8 @@
 #!/usr/bin/node
 // Prnts the square of given size
-
 const arg = process.argv;
 const s = parseInt(arg[2], 10);
 const r = [];
-
 if (isNaN(s)) {
   console.log('Missing size');
 } else {
