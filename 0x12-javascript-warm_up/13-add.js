@@ -1,2 +1,3 @@
 #!/usr/bin/node
-exports.add = (a, b) => a + b;
+// anonymous function
+exports.add = (x, y) => x + y;
