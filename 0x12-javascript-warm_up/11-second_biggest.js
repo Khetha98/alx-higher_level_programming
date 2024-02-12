@@ -1,11 +1,8 @@
 #!/usr/bin/node
 // Checks second biggest integer in a list of arguments
-
 const arg = process.argv;
-
 if (isNaN(arg[2])) {
   console.log('0');
-
 } else if (arg.length === 3) {
   console.log('0');
 } else {
