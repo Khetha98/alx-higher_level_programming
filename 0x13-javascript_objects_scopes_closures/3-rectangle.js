@@ -6,12 +6,11 @@ module.exports = class Rectangle {
         [this.width, this.height] = [w, h];
       }
     }
-  
     print () {
-      let sizeY = this.height;
-      while (sizeY > 0) {
+      let size = this.height;
+      while (size > 0) {
         console.log('X'.repeat(this.width));
-        sizeY -= 1;
+        size -= 1;
       }
     }
-  };
+};
