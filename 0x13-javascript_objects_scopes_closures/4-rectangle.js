@@ -15,12 +15,13 @@ module.exports = class Rectangle {
     }
 
     rotate () {
-      this.width = this.height;
+      const temporaryHeight = this.height;
       this.height = this.width;
+      this.width = temporaryHeight;
     }
 
     double () {
-      this.width = this.width * 2;
-      this.height = this.height * 2;
+      [this.width, this.height] = [this.width, this.height]
+        .map(prop => prop * 2);
     }
 };
