@@ -1,27 +1,26 @@
 #!/usr/bin/node
+// Represents the Rectangle class
 class Rectangle {
     constructor (w, h) {
-      if (w > 0 && h > 0) {
+      if ((w = parseInt(w)) > 0 && (h = parseInt(h)) > 0) {
         this.width = w;
         this.height = h;
       }
     }
   
     print () {
-      for (let x = 0; x < this.height; x++) {
+      for (let idx = 0; idx < this.height; idx++) {
         console.log('X'.repeat(this.width));
       }
     }
   
     rotate () {
-      const temp = this.width;
-      this.width = this.height;
-      this.height = temp;
+      [this.width, this.height] = [this.height, this.width];
     }
   
     double () {
-      this.height *= 2;
       this.width *= 2;
+      this.height *= 2;
     }
   }
   
