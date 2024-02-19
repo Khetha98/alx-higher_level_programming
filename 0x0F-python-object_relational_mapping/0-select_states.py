@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 """  It list all states from database """
 import MySQLdb
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
-    db_connect = MySQLdb.connect(host="localhost", user=sys.argv[1],
-                         passwd=sys.argv[2], db=sys.argv[3], port=3306)
-    cur = db_connect.cursor()
-    cur.execute("SELECT * FROM states")
-    rows = cur.fetchall()
-    for i in rows:
+    db = MySQLdb.connect(
+        host="localhost", user=argv[1], port=3306, passwd=argv[2], db=argv[3])
+
+    db_cursor = db.cursor()
+
+    db_cursor.execute("SELECT * FROM states")
+
+    rows_selected = db_cursor.fetchall()
+
+    for i in rows_selected:
         print(i)
-    cur.close()
-    db_connect.close()
