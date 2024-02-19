@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """  it lists sttes from the database """
+
 import MySQLdb
 import sys
 

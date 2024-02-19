@@ -6,6 +6,7 @@ list all states from database
 import MySQLdb
 from sys import argv
 
+
 if __name__ == '__main__':
     """
     Access to the database and get the states
