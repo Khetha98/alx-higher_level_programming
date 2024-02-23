@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"Module as a class definition State"
+"""Module as a class definition State"""
 
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, String, Integer, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-mymetadata = MetaData()
-Base = declarative_base(metadata=mymetadata)
+themetadata = MetaData()
+Base = declarative_base(metadata=themetadata)
 
 
 class State(Base):
