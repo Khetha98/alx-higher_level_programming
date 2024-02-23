@@ -6,6 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from relationship_state import Base, State
 from relationship_city import City
 
+
 if __name__ == "__main__":
     """Access to the database"""
 
@@ -14,7 +15,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
-    
+
     session = Session()
     theState = State(name='California')
     theCity = City(name='San Francisco')
