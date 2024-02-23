@@ -6,7 +6,6 @@ from sqlalchemy.orm import Session
 from relationship_state import Base, State
 from relationship_city import City
 
-
 if __name__ == '__main__':
     """Access to the database"""
 
