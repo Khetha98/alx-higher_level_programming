@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """It has a class for City"""
 from relationship_state import Base
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, ForeignKey, Integer
 
 
