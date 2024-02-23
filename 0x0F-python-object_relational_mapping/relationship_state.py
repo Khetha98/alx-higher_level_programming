@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Module as a class definition State"""
-
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, String, Integer, MetaData
 from sqlalchemy.ext.declarative import declarative_base
