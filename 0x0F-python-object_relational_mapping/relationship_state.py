@@ -10,6 +10,7 @@ Base = declarative_base()
 class State(Base):
     """Class for the State"""
     __tablename__ = 'states'
+
     id = Column(Integer, autoincrement=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
     cities = relationship("City",cascade='save-update, merge, delete', backref="states")
