@@ -1,4 +1,4 @@
--- Create hbtn_0e_100_usa database
+-- Create the database hbtn_0e_100_usa
 CREATE DATABASE IF NOT EXISTS hbtn_0e_100_usa;
 USE hbtn_0e_100_usa;
 
