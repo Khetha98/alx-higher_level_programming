@@ -20,5 +20,5 @@ if __name__ == '__main__':
     theState.cities.append(theCity)
 
     session.add(theState)
-    session.add(theCity)
     session.commit()
+    session.close()
