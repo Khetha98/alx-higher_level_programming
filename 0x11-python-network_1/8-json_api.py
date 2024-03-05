@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script taht sends a POST request to http://0.0.0.0:5000/search_user with a given letter.
+"""sends the POST request to http://0.0.0.0:5000/search_user with a given letter.
 """
 import sys
 import requests
