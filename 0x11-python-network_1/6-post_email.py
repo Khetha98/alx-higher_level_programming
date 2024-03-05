@@ -9,8 +9,6 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    u = argv[1]
-    value_ = {"email": argv[2]}
-    r = requests.post(u, data=value_)
-
-    print(r.text)
+    p = {'email': argv[2]}
+    req = requests.post(argv[1], data=p)
+    print(req.text)
