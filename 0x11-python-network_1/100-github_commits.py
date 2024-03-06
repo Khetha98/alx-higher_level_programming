@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""lists the 10 most recent commits on a given GitHub repository.
+"""list the 10 most recent commits on given GitHub repository.
 """
 import sys
 import requests
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/repos/{}/{}/commits".format(
+    u = "https://api.github.com/repos/{}/{}/commits".format(
         sys.argv[2], sys.argv[1])
 
-    r = requests.get(url)
+    r = requests.get(u)
     commits = r.json()
     try:
         for i in range(10):
