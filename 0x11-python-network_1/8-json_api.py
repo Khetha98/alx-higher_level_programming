@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-"""A script tha:
-- takes in a letter
-- sends POST request to http://0.0.0.0:5000/search_user
-with the letter as a parameter.
+"""The script that send post
 """
 import sys
 import requests
 
 
 if __name__ == "__main__":
-    letter = "" if len(sys.argv) == 1 else sys.argv[1]
-    payload = {"q": letter}
+    l = "" if len(sys.argv) == 1 else sys.argv[1]
+    payload = {"q": l}
 
     r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
     try:
