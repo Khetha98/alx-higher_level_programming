@@ -6,15 +6,15 @@ import requests
 
 
 if __name__ == "__main__":
-    u = "https://api.github.com/repos/{}/{}/commits".format(
+    url = "https://api.github.com/repos/{}/{}/commits".format(
         sys.argv[2], sys.argv[1])
 
-    r = requests.get(u)
+    r = requests.get(url)
     commits = r.json()
     try:
-        for j in range(10):
+        for i in range(10):
             print("{}: {}".format(
-                commits[j].get("sha"),
-                commits[j].get("commit").get("author").get("name")))
+                commits[i].get("sha"),
+                commits[i].get("commit").get("author").get("name")))
     except IndexError:
         pass
